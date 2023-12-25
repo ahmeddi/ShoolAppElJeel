@@ -3,7 +3,7 @@
 return [
 
     'etuds' => 'Les étudiants',
-    
+
     //view
     'etuds-add' => 'Nouvel étudiant',
 
@@ -52,6 +52,9 @@ return [
 
     'liste' => 'Liste',
     'nliste' => 'Non-liste',
+
+    'activ' => 'Activé',
+    'desactiv' => 'Désactivé',
 
     'cot' => 'Frais d\'études',
 
