@@ -20,12 +20,12 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div>
-                <label for="eid" for="auths" class="labels w-full  flex justify-end font-bold"> :المستخدم </label>
-                <input id="auths" name="auths"  class="mt-1 inputs w-full rounded-md h-10  " type="text"   required autocomplete="current-password" />       
+                <label for="auths" for="auths" class="labels w-full  flex justify-end font-bold"> :المستخدم </label>
+                <input id="auths" name="auths"  class="mt-1 inputs w-full rounded-md h-10  " type="text"   required autocomplete="auths" />       
             </div>
 
             <div class="mt-4">
-                <label for="eid" for="password" class="labels w-full flex justify-end font-bold" >: كلمة المرور </label>
+                <label for="password" for="password" class="labels w-full flex justify-end font-bold" >: كلمة المرور </label>
                 <input id="password" name="password"  class="mt-1 inputs w-full rounded-md h-10  " type="password"   required autocomplete="current-password" />       
             </div>
 
