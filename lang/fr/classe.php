@@ -45,4 +45,6 @@ return [
     'soir' => 'Prix de la Cours du Soir',
     'soir-jorn' => 'Emploi Cours du Soir',
 
+    'class-lists' => 'Résultats de la Classe',
+
 ];

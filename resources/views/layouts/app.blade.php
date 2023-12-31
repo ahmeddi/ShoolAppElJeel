@@ -40,11 +40,29 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body style="print-color-adjust: exact;"  class="bg-gray-200 dark:bg-gray-700  font-sans antialiased flex  relative "
+    <body style="print-color-adjust: exact; " media="print"  class="bg-gray-200 dark:bg-gray-700  font-sans antialiased flex  relative "
             x-data="{
+
                 printDiv() {
                     window.print();           
                 },
+
+                printResult() {
+                    const style = document.createElement('style');
+                    style.textContent = `
+                        @page {
+                            size: A4 landscape;
+                            margin: 2;
+                        }
+                    `;
+                    document.head.appendChild(style);
+                    
+                    window.print();
+                    
+                    // Remove the style after printing to reset margins
+                    style.remove();
+                },
+
                 printA5NoMargin() {
                     const style = document.createElement('style');
                     style.textContent = `

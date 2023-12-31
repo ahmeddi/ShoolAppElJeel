@@ -139,6 +139,11 @@ Route::middleware([
 
         Route::get('/Classe/Results/{id}/Sem/{sem}', [JornsController::class, "result"]);
 
+        Route::get('/Classe/Resultat/{id}', [JornsController::class, "resultat"]);
+
+
+
+
 
         #Matieres --------------------------------------------------------
 
