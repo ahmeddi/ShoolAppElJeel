@@ -30,7 +30,7 @@
                                 @endif
                             </div> 
     
-                            <div class=" absolute z-10 w-full bottom-28   px-20 text-lg text-gray-700 print:dark:text-gray-900   dark:text-gray-100">
+                            <div class=" absolute z-10 w-full  text-base bottom-20   px-20  text-gray-700 print:dark:text-gray-900   dark:text-gray-100">
                                 <div class="w-full p-4 flex  justify-center items-center"> 
                                 <div>بتاريخ :  </div>
                                     <div class=" mx-4 font-bold">{{ \Carbon\Carbon::now()->format('d-m-Y') }}</div>
@@ -38,7 +38,11 @@
                                 </div> 
                                 <div class=" w-full flex justify-between ">
                                     <div>توقيع المدير</div>
-                                    <div>توقيع الوكيل</div>
+                                    @if ($list->classe->moy == 1)
+                                        <div>توقيع المعلم</div>
+                                    @else
+                                        <div>توقيع الوكيل</div>
+                                    @endif
                                 </div>
                             </div>
                     </div>

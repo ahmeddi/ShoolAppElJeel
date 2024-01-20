@@ -31,11 +31,10 @@
                         <div> :Le </div>
                     </div> 
                     <div class=" w-full flex justify-between ">
-                        <div>توقيع المدير</div>
                         @if ($classe_moy == 1)
-                        <div>توقيع المعلم</div>
+                            <div>توقيع المعلم</div>
                         @else
-                        <div>توقيع الوكيل</div>
+                            <div>توقيع الوكيل</div>
                         @endif
                     </div>
                 </div>

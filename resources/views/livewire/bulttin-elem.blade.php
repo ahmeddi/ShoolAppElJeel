@@ -43,7 +43,7 @@
     </div>
 
 
-    <div class=" flex w-full gap-x-4 text-xs">
+    <div class=" flex w-full gap-x-4 text-sm">
 
         <table class="w-1/2 h-fit   text-right text-gray-900  dark:text-gray-400">
             <tr class=" h-10  divide-y divide-x divide-gray-900 dark:bg-gray-800 bg-gray-100 border border-gray-900">
@@ -188,7 +188,7 @@
         </div>
     </div>
 
-    <div class="border border-gray-900 p-1 w-full flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
+    {{-- <div class="border border-gray-900 p-1 w-full flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
         <div class="px-3">
             الرتبة
         </div>
@@ -198,7 +198,7 @@
         <div class="px-3">
             Rang
         </div>
-    </div>
+    </div> --}}
     
     {{-- <div class="p-1 w-full flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
         <div>
