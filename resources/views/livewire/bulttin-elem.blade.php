@@ -178,13 +178,13 @@
 
     <div class="w-full flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
         <div class=" w-1/3 py-1 px-3 text-right font-bold">
-            المعدل العام
+            التقدير
         </div>
         <div  class="w-1/3 py-1 px-3 text-center font-bold text-lg">
-          10 /  {{ $moy }} 
+            <div>{{ $note }}</div>
         </div>
         <div class="w-1/3 py-1 px-3 font-bold text-left ">
-            Moyenne générale
+            Mention
         </div>
     </div>
 
