@@ -200,7 +200,7 @@
         </div>
     </div>
     
-    <div class="p-1 w-full flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
+    {{-- <div class="p-1 w-full flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
         <div>
             التقدير
         </div>
@@ -211,5 +211,5 @@
             Mention
         </div>
     </div>
-    
+     --}}
 </div>
