@@ -9,7 +9,9 @@ use App\Models\Examen;
 use App\Models\Etudiant;
 use App\Models\Semestre;
 use Illuminate\Http\Request;
+use App\Services\CalculBulttin;
 use App\Models\ProfClassesResult;
+use App\Services\CalculBulttinElemnt;
 
 class ResultController extends Controller
 {
@@ -74,6 +76,11 @@ class ResultController extends Controller
         }
 
         if (Semestre::find($sem)) {
+
+            $etud = Etudiant::find($etud);
+
+            $this->calculBulttin($etud->classe->id, $sem, $etud->classe->moy);
+
             return view('Bulltin', [
                 'etud' => $etud,
                 'sem' => $sem,
@@ -123,5 +130,14 @@ class ResultController extends Controller
             // 'results' => $results,
             'etudiant' => $etudiant,
         ]);
+    }
+
+    public function calculBulttin($classeId, $semId, $isEelm)
+    {
+        if ($isEelm) {
+            new CalculBulttinElemnt($classeId, $semId);
+        } else {
+            new CalculBulttin($classeId, $semId);
+        }
     }
 }

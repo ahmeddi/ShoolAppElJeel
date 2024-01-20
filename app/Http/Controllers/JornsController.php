@@ -7,6 +7,8 @@ use App\Models\Classe;
 use App\Models\Profil;
 use App\Models\Semestre;
 use Illuminate\Http\Request;
+use App\Services\CalculBulttin;
+use App\Services\CalculBulttinElemnt;
 
 class JornsController extends Controller
 {
@@ -78,6 +80,9 @@ class JornsController extends Controller
         if ($classe and  $sem) {
 
             $list = $classe->etuds;
+
+            $this->calculBulttin($classe->id, $sem->id, $classe->moy);
+
             return view(
                 'ClasseBulttins',
                 [
@@ -170,6 +175,15 @@ class JornsController extends Controller
             );
         } else {
             abort(404);
+        }
+    }
+
+    public function calculBulttin($classeId, $semId, $isEelm)
+    {
+        if ($isEelm) {
+            new CalculBulttinElemnt($classeId, $semId);
+        } else {
+            new CalculBulttin($classeId, $semId);
         }
     }
 }
