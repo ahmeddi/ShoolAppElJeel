@@ -1,5 +1,5 @@
 <div dir="rtl" class=" flex flex-col space-y-2 w-full h-full">
-    <img wire:model='header' src="{{ asset('storage'.'/'.$header) }}" class="h-20 w-auto object-cover mb-3 "    />
+    <img wire:model='header' src="{{ asset('storage'.'/'.$header) }}" class="h-28 w-auto object-cover mb-3 "    />
 
     <div class="w-full mb-1 rounded-md p-2  border border-gray-700">
 
@@ -43,7 +43,7 @@
     </div>
 
 
-    <div class=" flex w-full gap-x-4 text-sm">
+    <div class=" flex w-full gap-x-4 text-xs">
 
         <table class="w-1/2 h-fit   text-right text-gray-900  dark:text-gray-400">
             <tr class=" h-10  divide-y divide-x divide-gray-900 dark:bg-gray-800 bg-gray-100 border border-gray-900">
