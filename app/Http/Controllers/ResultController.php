@@ -82,8 +82,9 @@ class ResultController extends Controller
             $this->calculBulttin($etud->classe->id, $sem, $etud->classe->moy);
 
             return view('Bulltin', [
-                'etud' => $etud,
+                'etud' => $etud->id,
                 'sem' => $sem,
+                'classe_moy' => $etud->classe->moy,
             ]);
         } else {
             return abort(404);
