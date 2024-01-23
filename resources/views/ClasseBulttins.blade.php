@@ -30,7 +30,7 @@
                                 @endif
                             </div> 
     
-                            <div class=" absolute z-10 w-full  text-base bottom-20   px-20  text-gray-700 print:dark:text-gray-900   dark:text-gray-100">
+                            <div class=" absolute z-10 w-full  text-sm bottom-20   px-20  text-gray-700 print:dark:text-gray-900   dark:text-gray-100">
                                 <div class="w-full p-4 flex  justify-center items-center"> 
                                 <div>بتاريخ :  </div>
                                     <div class=" mx-4 font-bold">{{ \Carbon\Carbon::now()->format('d-m-Y') }}</div>
