@@ -176,7 +176,7 @@
         </div>
     </div>
 
-    <div class="w-full flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
+    <div class="w-full border border-gray-600 flex justify-between print:dark:text-gray-700 print:text-gray-700 text-gray-900 whitespace-nowrap dark:text-white">
         <div class=" w-1/3 py-1 px-3 text-right font-bold">
             المعدل العام
         </div>
@@ -192,7 +192,7 @@
         <div class=" w-1/3 py-1 px-3 text-right font-bold">
             التقدير
         </div>
-        <div  class="w-1/3 py-1 px-3 text-center font-bold text-lg">
+        <div  class="w-1/3 py-1 px-3 text-center font-bold text-base">
             <div>{{ $note }}</div>
         </div>
         <div class="w-1/3 py-1 px-3 font-bold text-left ">
