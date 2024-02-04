@@ -141,6 +141,9 @@ Route::middleware([
 
         Route::get('/Classe/Resultat/{id}', [JornsController::class, "resultat"]);
 
+        Route::get('/Classe/{id}/Compt', [JornsController::class, "compt"]);
+
+
 
 
 
