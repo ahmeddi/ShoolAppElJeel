@@ -20,4 +20,9 @@ class PaiementParent extends Model
     {
         return $this->belongsTo(Parentt::class);
     }
+
+    public function etudPaiements()
+    {
+        return $this->hasMany(EtudPaiement::class, 'paiement_parent_id');
+    }
 }
